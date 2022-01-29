@@ -5,15 +5,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-
+  <title>Shortening api landing page</title>
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="header-left">
+        <a class="site-logo-link" href="#">
+          <img class="site-logo" src="imgs/logo.svg" width="121" height="33" alt="site logo">
+        </a>
+        <nav class="site-nav">
+          <ul class="site-nav-list">
+            <li class="site-nav-item">
+              <a class="site-nav-item-link" href="#">Features</a>
+            </li>
+            <li class="site-nav-item">
+              <a class="site-nav-item-link" href="#">Pricing</a>
+            </li>
+            <li class="site-nav-item">
+              <a class="site-nav-item-link" href="#">Resources</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-right">
+        <a class="login-link" href="#">Login</a>
+        <a class="button header-button" href="#">Sign Up</a>
+      </div>
+    </div>
+  </header>
 
+  <main class="main-content">
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-heading">More than just shorter links</h1>
+          <p class="hero-text">Build your brand's recognition and get detailed insights on how your links are
+            performing.</p>
+          <a class="hero-button button" href="#">Get Started</a>
+        </div>
+        <img class="hero-img" src="imgs/hero-bg.svg" width="733" height="482" alt="">
+      </div>
+    </section>
+
+    <section class="shorten">
+      <form action="https://echo.htmlacademy.ru" method="POST" class="shorten-form container">
+        <input class="shorten-input" type="text" placeholder="Shorten a link here..." required>
+        <button class="shorten-button button" type="submit">Shorten It!</button>
+      </form>
+    </section>
+  </main>
 
   <script src="js/main.js"></script>
 </body>

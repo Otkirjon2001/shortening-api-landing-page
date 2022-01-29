@@ -1,3 +1,20 @@
+/* FONTS */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/poppins-v19-latin-500.woff2') format('woff2'),
+       url('../fonts/poppins-v19-latin-500.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/poppins-v19-latin-700.woff2') format('woff2'),
+       url('../fonts/poppins-v19-latin-700.woff') format('woff');
+}
 /* GLOBAL */
 html{
   box-sizing: border-box;
@@ -13,22 +30,37 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family:"Poppins","Arial", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
   background-color: #fff;
-  color: #000;
+  color: #9E9AA8;
 }
 img{
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
+.button{
+  display: inline-block;
+  background-color: #2BD0D0;
+  color: #fff;
+  border-radius: 28px;
+  transition: background-color 0.4s ease;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.button:active{
+  background-color: #9AE3E3;
+}
 
 /* CONTAINER  */
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1210px;
   padding-right: 50px;
   padding-left: 50px;
   margin-right: auto;
@@ -38,4 +70,54 @@ img{
 /* MAIN CONTENT  */
 .main-content{
   flex-grow: 1;
+}
+
+/* SITE-HEADER */
+.site-header {
+  padding-top: 48px;
+  margin-bottom: 78px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left {
+  display: flex;
+}
+.site-logo-link{
+  display: flex;
+  margin-right: 46px;
+}
+.site-logo {
+  width: 121px;
+  height: 33px;
+}
+.site-nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+.site-nav-item-link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #9E9AA8;
+}
+.login-link {
+  display: inline-block;
+  margin-right: 37px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #9E9AA8;
+  text-decoration: none;
+}
+.header-button {
+  padding: 9px 24px;
 }
