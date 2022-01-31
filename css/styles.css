@@ -20,6 +20,7 @@ html{
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 *,*::after,*::before{
   box-sizing: border-box;
@@ -41,6 +42,10 @@ img{
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+* :focus{
+  outline-offset: 5px;
+  outline-style: dashed;
 }
 .button{
   display: inline-block;
@@ -120,4 +125,90 @@ img{
 }
 .header-button {
   padding: 9px 24px;
+}
+
+/* HERO */
+.hero {
+}
+.container {
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-content {
+  width: 565px;
+}
+.hero-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -2px;
+  color: #34313D;
+}
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+.hero-button {
+  padding: 14px 40px;
+}
+.button {
+}
+.hero-img {
+  display: block;
+  margin-right: -242px;
+}
+
+/* SHORTEN */
+
+.shorten {
+}
+.shorten-form {
+  padding: 52px 64px;
+  background-color: #3A3054;
+  background-image: url("../imgs/cta-bg.svg");
+  border-radius: 10px;
+}
+.container {
+}
+.shorten-input {
+  max-width: 770px;
+  width: 100%;
+  margin: 0;
+  margin-right: 24px;
+  padding: 14px 32px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+}
+.shorten-input::placeholder{
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: #34313D;
+  opacity: 0.5;
+}
+.shorten-input:not(:placeholder-shown){
+  border-color:#F46363 ;
+}
+.shorten-input:valid{
+  border-color:rgb(28, 161, 28);
+}
+.shorten-input:required{
+  border-color:#F46363 ;
+}
+.shorten-input:required::placeholder{
+  color: #F46363;
+}
+.shorten-button {
+  padding: 18px 40px;
+  border-radius:10px;
+}
+.button {
 }
