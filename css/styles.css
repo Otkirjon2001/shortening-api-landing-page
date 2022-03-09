@@ -203,9 +203,9 @@ img{
 }
 .shorten-form {
   padding: 52px 64px;
+  border-radius: 10px;
   background-color: #3A3054;
   background-image: url("../imgs/cta-bg.svg");
-  border-radius: 10px;
 }
 .shorten-input {
   max-width: 770px;
