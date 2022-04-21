@@ -75,10 +75,10 @@ img{
   white-space: nowrap;
 }
 .button:hover{
-  opacity: 0.8;
+  background-color: #9AE3E3;
 }
 .button:active{
-  background-color: #9AE3E3;
+  opacity: 0.6;
 }
 
 /* CONTAINER  */
@@ -101,39 +101,42 @@ img{
   padding-top: 48px;
   margin-bottom: 78px;
 }
-.header-container {
+.site-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header-left {
+.site-header__left {
   display: flex;
 }
-.site-logo-link{
-  display: flex;
+.site-header__logo{
   margin-right: 46px;
+}
+.logo{
+  flex-shrink: 0;
+  display: flex;
   transition: opacity 0.4s ease;
 }
-.site-logo-link:hover{
+.logo:hover{
   opacity: 0.8;
 }
-.site-logo-link:active{
+.logo:active{
   opacity: 0.6;
 }
-.site-logo {
+.logo__img {
   width: 121px;
   height: 33px;
 }
-.site-nav-list {
+.sitenav__list {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.site-nav-item:not(:last-child) {
+.sitenav__item:not(:last-child) {
   margin-right: 30px;
 }
-.site-nav-item-link {
+.sitenav__link {
   font-weight: bold;
   font-size: 15px;
   line-height: 22px;
@@ -141,13 +144,13 @@ img{
   transition: color 0.4s ease, opacity 0.4s ease;
   text-decoration: none;
 }
-.site-nav-item-link:hover{
+.sitenav__link:hover{
   color: var(--heading-color);
 }
-.site-nav-item-link:active{
+.sitenav__link:active{
   opacity: 0.8;
 }
-.login-link {
+.site-header__login {
   display: inline-block;
   margin-right: 37px;
   font-weight: bold;
@@ -157,19 +160,20 @@ img{
   text-decoration: none;
   transition: color 0.4s ease, opacity 0.4s ease;
 }
-.login-link:hover{
+.site-header__login:hover{
   color: #232127;
 }
-.login-link:active{
+.site-header__login:active{
   opacity: 0.6;
 }
-.header-button {
+.site-header__button {
   padding: 9px 24px;
 }
 
 /* HERO */
 .hero {
   margin-bottom: 68px;
+  background-image: url();
 }
 .hero-container {
   display: flex;
