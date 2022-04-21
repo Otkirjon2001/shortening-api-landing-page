@@ -99,7 +99,6 @@ img{
 /* SITE-HEADER */
 .site-header {
   padding-top: 48px;
-  margin-bottom: 78px;
 }
 .site-header__container {
   display: flex;
@@ -172,18 +171,23 @@ img{
 
 /* HERO */
 .hero {
-  margin-bottom: 68px;
-  background-image: url();
+  margin-bottom: 85px;
+  padding-top: 138px;
+  padding-bottom: 138px;
+  background-image: url("../imgs/hero-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 470px) center;
+  background-size: 733px 482px;
 }
-.hero-container {
+.hero__container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-.hero-content {
+.hero__content {
   width: 565px;
 }
-.hero-heading {
+.hero__heading {
   margin-top: 0;
   margin-bottom: 5px;
   font-weight: bold;
@@ -192,58 +196,131 @@ img{
   letter-spacing: -2px;
   color: var(--heading-color);
 }
-.hero-text {
+.hero__text {
   margin-top: 0;
   margin-bottom: 38px;
   font-size: 22px;
   line-height: 36px;
   letter-spacing: 0.15px;
 }
-.hero-button {
+.hero__button {
   padding: 14px 40px;
 }
-.hero-img {
-  display: block;
-  margin-right: -242px;
-}
+
 
 /* SHORTEN */
 .shorten {
+  display: flex;
   position: relative;
-  margin-bottom: -80px;
+  background-color: #EFF1F7;
 }
-.shorten-form {
+.shorten__form {
+  position: relative;
+  margin-top: -84px;
+}
+.shorten__inner{
   padding: 52px 64px;
   border-radius: 10px;
   background-color: #3A3054;
   background-image: url("../imgs/cta-bg.svg");
 }
-.shorten-input {
+.shorten__input {
   max-width: 770px;
   width: 100%;
   margin: 0;
   margin-right: 24px;
-  padding: 14px 32px;
-  border: 3px solid var(--font-color);
-  border-radius: 10px;
-}
-.shorten-input::placeholder{
+  padding: 11px 32px;
   font-size: 20px;
   line-height: 36px;
   letter-spacing: 0.15px;
-  color: var(--heading-color);
-  opacity: 0.5;
+  border: 3px solid var(--font-color);
+  border-radius: 10px;
 }
-input:not(:placeholder-shown){
-  border-color:#F46363;
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder{
+  color: rgba(52, 49, 61, .5);
+  opacity: 1;
 }
-.shorten-input:valid{
-  border-color:rgb(28, 161, 28);
+.shorten__input:not(:focus):not(:placeholder-shown):valid {
+  border-color: var(--font-color);
 }
-.shorten-button {
-  padding: 18px 40px;
-  border-radius:10px;
+.shorten__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: #F46363;
+  color: #F46363;
 }
+.shorten__input:focus + .validation-error,
+.shorten__input:valid + .validation-error,
+.shorten__input:placeholder-shown + .validation-error {
+  display: none;
+}
+.shorten__input:-webkit-autofill,
+.shorten__input:-webkit-autofill:hover,
+.shorten__input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px var(--font-color) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.shorten__error-msg{
+  position: absolute;
+  display: none;
+  top: 124px;
+  left: 64px;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.109091px;
+  color:#F46363;
+}
+.shorten__input:not(:focus):not(:placeholder-shown):invalid ~ .shorten__error-msg{
+  display: block;
+}
+.shorten__button{
+  padding: 17px 40px;
+  border-radius: 10px;
+}
+.shorten__list {
+}
+.results {
+  display: none;
+}
+.results--open{
+  display: block;
+}
+.results__item {
+  display: flex;
+  padding: 16px 24px 16px 32px;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  border-radius: 5px;
+  background-color: var(--font-color);
+}
+.results__item:not(:last-child){
+  margin-bottom: 16px;
+}
+.results__included {
+  width: 100%;
+  margin-right: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #34313D;
+}
+.results__link {
+  color: #2BD0D0;
+}
+.results__button {
+  margin-left: 24px;
+  padding: 9px 31px;
+  font-size: 15px;
+  line-height: 22px;
+  border-radius: 5px;
+}
+.button {
+}
+
+
 
 /* STATISTICS */
 .statistics {
@@ -370,9 +447,11 @@ input:not(:placeholder-shown){
   padding-top: 72px;
   padding-bottom: 72px;
 }
+.footer-logo-box{
+  flex-grow: 1;
+}
 .footer-logo-link {
   display: flex;
-  margin-right: 262px;
   color: var(--font-color);
   transition: opacity 0.4s ease;
 }
