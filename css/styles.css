@@ -102,11 +102,7 @@ img{
 }
 .site-header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-.site-header__left {
-  display: flex;
 }
 .site-header__logo{
   margin-right: 46px;
@@ -125,6 +121,9 @@ img{
 .logo__img {
   width: 121px;
   height: 33px;
+}
+.site-header__sitenav{
+  margin-right: auto;
 }
 .sitenav__list {
   display: flex;
@@ -279,8 +278,6 @@ img{
   padding: 17px 40px;
   border-radius: 10px;
 }
-.shorten__list {
-}
 .results {
   display: none;
 }
@@ -317,7 +314,8 @@ img{
   line-height: 22px;
   border-radius: 5px;
 }
-.button {
+.button--open {
+  background-color: #3A3054;
 }
 
 
