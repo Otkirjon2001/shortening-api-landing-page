@@ -326,7 +326,7 @@ img{
   padding-bottom: 120px;
   background-color: #EFF1F7;
 }
-.statistics-heading {
+.statistics__heading {
   margin-top: 0;
   margin-bottom: 18px;
   font-weight: bold;
@@ -336,7 +336,7 @@ img{
   color: var(--heading-color);
   text-align: center;
 }
-.statistics-subject {
+.statistics__subject {
   max-width: 540px;
   width: 100%;
   margin: 0 auto 100px auto;
@@ -345,10 +345,10 @@ img{
   letter-spacing: 0.122727px;
   text-align: center;
 }
-.statistics-inner {
+.statistics__inner {
   position: relative;
 }
-.statistics-list {
+.statistics__list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -357,25 +357,27 @@ img{
   padding: 0;
   list-style: none;
 }
-.statistics-item {
+.statistics__item {
   position: relative;
   z-index: 20;
   max-width: 350px;
   width: 100%;
+}
+.statistics__item:not(:last-child){
+  margin-right: 30px;
+}
+.statistics__item:nth-child(2){
+  transform: translateY(50px);
+}
+.statistics__item:nth-child(3){
+  transform: translateY(100px);
+}
+.statistic-element{
   padding:  77px 32px 41px 32px;
   border-radius: 5px;
   background: var(--font-color);
 }
-.statistics-item:not(:last-child){
-  margin-right: 30px;
-}
-.statistics-item:nth-child(2){
-  transform: translateY(50px);
-}
-.statistics-item:nth-child(3){
-  transform: translateY(100px);
-}
-.img-box{
+.statistic-element__img-box{
   position: absolute;
   left: 32px;
   top: 0;
@@ -385,10 +387,10 @@ img{
   background-color: #3A3054;
   transform: translateY(-50%);
 }
-.statistics-item-img {
+.statistic-element__img {
   display: flex;
 }
-.statistics-item-heading {
+.statistic-element__heading {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: bold;
@@ -396,11 +398,11 @@ img{
   line-height: 33px;
   color: var(--heading-color);
 }
-.statistics-item-text {
+.statistic-element__text {
   margin-top: 0;
   margin-bottom: 0;
 }
-.statistics-hr {
+.statistics__hr {
   position: absolute;
   top: 152px;
   z-index: 3;
@@ -416,14 +418,14 @@ img{
   background-repeat: no-repeat;
   background-position: center center;
 }
-.boost-links-container {
+.boost-links__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 57px;
   padding-bottom: 57px;
 }
-.boost-links-heading {
+.boost-links__heading {
   margin-top: 0;
   margin-bottom: 32px;
   font-weight: bold;
@@ -432,7 +434,7 @@ img{
   letter-spacing: -1px;
   color: var(--font-color);
 }
-.boost-links-button {
+.boost-links__button {
   padding: 14px 40px;
 }
 
