@@ -73,6 +73,7 @@ img{
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
+  text-transform: capitalize;
 }
 .button:hover{
   background-color: #9AE3E3;
@@ -442,39 +443,27 @@ img{
 .site-footer {
   background-color:#232127;
 }
-.footer-container {
+.site-footer__container {
   display: flex;
+  align-items: flex-start;
   padding-top: 72px;
   padding-bottom: 72px;
 }
-.footer-logo-box{
-  flex-grow: 1;
-}
-.footer-logo-link {
-  display: flex;
+.site-footer__logo {
+  margin-right: auto;
   color: var(--font-color);
-  transition: opacity 0.4s ease;
 }
-.footer-logo-link:hover{
-  opacity: 0.8;
-}
-.footer-logo-link:active{
-  opacity: 0.6;
-}
-.footer-logo {
-  width: 121px;
-  height: 33px;
-}
-.footer-box:nth-child(2) {
+.site-footer__box:nth-child(2) {
+  margin-left: 30px;
   margin-right: 78px;
 }
-.footer-box:nth-child(3) {
+.site-footer__box:nth-child(3) {
   margin-right: 107px;
 }
-.footer-box:nth-child(4) {
+.site-footer__box:nth-child(4) {
   margin-right: 101px;
 }
-.footer-heading {
+.site-footer-menu__heading {
   margin-top: 0;
   margin-bottom: 22px;
   font-weight: bold;
@@ -483,49 +472,50 @@ img{
   letter-spacing: -0.25px;
   color: var(--font-color);
 }
-.features-list {
+.site-footer-menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.features-item:not(:last-child) {
+.site-footer-menu__item:not(:last-child) {
   margin-bottom: 10px;
 }
-.features-item-link {
+.site-footer-menu__link {
   line-height: 22px;
   letter-spacing: -0.234375px;
   color: #BFBFBF;
   white-space: nowrap;
   transition: color 0.4s ease, opacity 0.4s ease;
   text-decoration: none;
+  text-transform: capitalize;
 }
-.features-item-link:hover{
+.site-footer-menu__link:hover{
   color: var(--primary-color);
 }
-.features-item-link:active{
+.site-footer-menu__link:active{
   opacity: 0.6;
 }
-.social-media-list {
+.social-media {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.social-media-item:not(:last-child){
+.social-media__item:not(:last-child){
   margin-right: 24px;
 }
-.social-media-item-link {
+.social-media__link {
   display: flex;
   color: var(--font-color);
   transition: color 0.4s ease, opacity 0.4s ease;
 }
-.social-media-item-link:hover{
+.social-media__link:hover{
   color: var(--primary-color);
 }
-.social-media-item-link:active{
+.social-media__link:active{
   opacity: 0.6;
 }
-.social-media-item-img {
+.social-media__img {
   width: 24px;
   height: 24px;
 }
